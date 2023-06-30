@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label"
+          >Name
+          <input id="name" type="text" placeholder="Enter your name" required
+        /></label>
+        <label id="email-label"
+          >Email
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+        /></label>
+        <label id="number-label"
+          >Age (optional)
+          <input id="number" type="number" min="13" max="100" placeholder="Age"
+        /></label>
+        <label
+          >Which option best describes your current role?
+          <select id="dropdown">
+            <option>Select current role</option>
+            <option>Student</option>
+            <option>Full time Job</option>
+            <option>Full time learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label
+          >Would you recommend freeCodeCamp to a friend?
+          <input type="radio" name="recommend" value="Definitely" />Definitely
+          <input type="radio" name="recommend" value="Maybe" />Maybe
+          <input type="radio" name="recommend" value="Not Sure" />Not sure
+        </label>
+        <label
+          >What is your favorite feature of freeCodeCamp?
+          <select id="dropdown">
+            <option>Select an option</option>
+            <option>Challenges</option>
+            <option>Projects</option>
+            <option>Community</option>
+            <option>Open source</option>
+          </select>
+        </label>
+        <label
+          >What would you like to see improved? (Check all that apply)
+        </label>
+        <label>
+          <input type="checkbox" value="Front-end Projects" />Front-end Projects
+        </label>
+        <label>
+          <input type="checkbox" value="Back-end Projects" />Back-end Projects
+        </label>
+        <label>
+          <input type="checkbox" value="Data" />Data visualization
+        </label>
+        <label
+          >Any comments or suggestions?
+          <textarea>Enter your comment here.. </textarea>
+        </label>
+        <label><input type="submit" id="submit" value="Submit" /></label>
+      </fieldset>
+    </form>
+    <div id="info">
+      <p>
+        The page design was created by
+        <a href="https://www.freecodecamp.org/">freeCodeCamp</a>, and
+        implemented by Andreina Devoto as an exercise. I do not claim any
+        ownership or authorship rights to the design.
+      </p>
+      <p>
+        Foto de
+        <a
+          href="https://unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Annie Spratt</a
+        >
+        en
+        <a
+          href="https://unsplash.com/es/s/fotos/alumnos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
+      </p>
+    </div>
+  </body>
+</html>
